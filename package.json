@@ -1,0 +1,23 @@
+{
+  "name": "convertmymoney",
+  "version": "1.0.0",
+  "description": "A simple application that converts an entered amount of USD to BRL using given exchange rate",
+  "main": "index.js",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "convert",
+    "money"
+  ],
+  "author": "Thiago Leal",
+  "license": "MIT"
+}
