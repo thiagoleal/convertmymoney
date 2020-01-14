@@ -1,12 +1,6 @@
 <%- include('header') %>
-
-<div class="result">
-    <% if(error){ %>
-        <%= error %>
-    <% }else{ %>
+    <div class="card-body">
         <%= quantidade %> dolares na cotação <%= cotacao %>
         é igual a <%= conversao %> reais.
-    <% } %>
-</div>
-
+    </div>
 <%- include('footer') %>
