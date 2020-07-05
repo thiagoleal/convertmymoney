@@ -1,15 +1,9 @@
 const express = require('express');
-
 const app = express();
-
 const path = require('path');
-
 const convert = require('./lib/convert');
-
 const apiBCB = require('./lib/api.bcb');
-
 const port = process.env.PORT || 3000;
-
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
@@ -24,12 +18,19 @@ app.get('/', async (req, res) => {
 
 app.get('/cotacao', (req, res) => {
   const { cotacao, quantidade } = req.query;
-    const conversao = convert.convert(cotacao, quantidade);
+  const conversao = convert.convert(cotacao, quantidade);
+  if (cotacao && quantidade) {
     res.render('cotacao', {
+      error: false,
       cotacao: convert.toMoney(cotacao),
-      conversao: convert.toMoney(conversao),
       quantidade: convert.toMoney(quantidade),
+      conversao: convert.toMoney(conversao),
     });
+  } else {
+    res.render('cotacao', {
+      error: 'Valores inválidos',
+    });
+  }
 });
 
 app.listen(port, (err) => {

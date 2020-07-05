@@ -1,6 +1,5 @@
-$(function(){
-  $('#converter').click(function(){
-
+$(function () {
+  $('#converter').click(function () {
     const cotacao = parseFloat($('#cotacao').val());
     const quantidade = parseFloat($('#quantidade').val());
 

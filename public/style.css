@@ -1,13 +1,13 @@
-body{
+body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
 }
 
-h1 img{
+h1 img {
   width: 500px;
 }
 
-input{
+input {
   border: 1px solid #000000;
   background: #fdfdfd;
   font-size: 20px;
@@ -15,15 +15,16 @@ input{
   margin: 4px;
 }
 
-button{
+button {
   border: 1px solid #000000;
   background: #d8d8d8;
   font-size: 20px;
   padding: 4px;
+  margin: 4px;
 }
 
-.result{
+.result {
   padding: 10px;
   border: 1px solid #d8d8d8;
-  background:  #fdfdfd;
+  background: #fdfdfd;
 }
