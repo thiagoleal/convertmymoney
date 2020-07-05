@@ -9,6 +9,7 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "minimist": ">=1.2.3",
     "eslint": "^7.4.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.11.0",
